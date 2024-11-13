@@ -1,6 +1,7 @@
 {
   "name": "bird-note",
   "version": "1.0.0",
+  "description": "Bird的学习笔记",
   "main": "index.js",
   "author": "coder-zrl <coder-zrl@qq.com>",
   "license": "MIT",
