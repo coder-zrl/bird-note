@@ -8,7 +8,9 @@ export default defineUserConfig({
     // 网站logo
     logo: '/img/logo.png',
     // 不展示Git信息
-    showContributors: false,
+    contributors: false,
+    // 不展示 "Last Updated"
+    // lastUpdated: false,
 
     // 导航栏
     navbar: [
