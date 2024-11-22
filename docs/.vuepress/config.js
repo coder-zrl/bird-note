@@ -10,16 +10,22 @@ export default defineUserConfig({
 
     // 导航栏
     navbar: [
-      {text: '首页', link: '/'},
-      {text: '指南', link: '/guide/'},
-      {text: 'BLOG', link: '/blog/'},
-      {text: '关于', link: '/about/'},
+      {text: '编码', link: '/encode'},
+      {text: '指南', link: '/guide'},
+      {text: 'BLOG', link: '/blog'},
+      {text: '关于', link: '/about'},
     ],
 
     // 侧边栏
     sidebar: {
-      '/guide/': 'auto',
-      '/blog/': [
+      '/encode': [
+        {
+          text: 'Base64编码原理与应用',
+          link: '/encode/Base64编码原理与应用'
+        }
+      ],
+      '/guide': 'auto',
+      '/blog': [
         {
           text: 'Blog',
           collapsible: true, // 分类是否可以折叠
