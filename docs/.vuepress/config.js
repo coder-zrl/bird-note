@@ -7,13 +7,35 @@ export default defineUserConfig({
   theme: defaultTheme({
     // 网站logo
     logo: '/img/logo.png',
+    // 不展示Git信息
+    showContributors: false,
 
     // 导航栏
     navbar: [
       {text: '编码', link: '/encode'},
       {text: '指南', link: '/guide'},
       {text: 'BLOG', link: '/blog'},
-      {text: '关于', link: '/about'},
+      {
+        text: '关于',
+        children: [
+          {text: 'GitHub', link: 'https://github.com/coder-zrl' },
+          {
+            text: '考研笔记',
+            children: [
+              {text: '计算机组成原理', link: 'https://aye10032.gitbook.io/computerorganizationnote'},
+              {text: '操作系统', link: 'https://aye10032.gitbook.io/os' }
+            ]
+          },
+          {
+            text: '绘图工具',
+            children: [
+              {text: 'PUML入门指南', link: 'https://pdf.plantuml.net/'},
+              {text: '在线绘制PUML', link: 'https://www.plantuml.com/plantuml/uml'},
+              {text: '像素风流程图白板', link: 'https://handraw.top/'},
+            ]
+          },
+        ]
+      },
     ],
 
     // 侧边栏
