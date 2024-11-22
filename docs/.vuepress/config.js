@@ -12,9 +12,9 @@ export default defineUserConfig({
 
     // 导航栏
     navbar: [
-      {text: '编码', link: '/encode'},
-      {text: '指南', link: '/guide'},
-      {text: 'BLOG', link: '/blog'},
+      {text: '编码', link: '/encode/'},
+      {text: '指南', link: '/guide/'},
+      {text: 'BLOG', link: '/blog/'},
       {
         text: '关于',
         children: [
@@ -49,11 +49,11 @@ export default defineUserConfig({
       '/guide': 'auto',
       '/blog': [
         {
-          text: 'Blog',
-          collapsible: true, // 分类是否可以折叠
+          text: 'Java基础',
+          collapsible: false, // 分类是否可以折叠
           children: [
-            {text: '这是一篇测试文章', link: '/blog/这是一篇测试文章'},
-            {text: '这是第二篇测试文章', link: '/blog/这是第二篇测试文章'},
+            {text: 'Java异步编程', link: '/blog/Java异步编程'},
+            {text: 'Stream流式处理', link: '/blog/Stream流式处理'},
           ],
         }
       ]
