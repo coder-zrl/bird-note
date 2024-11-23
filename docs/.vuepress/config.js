@@ -1,6 +1,7 @@
 import {viteBundler} from '@vuepress/bundler-vite'
 import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress'
+import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -65,4 +66,5 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Bird的个人知识库',
   description: 'Just playing around',
+  clientConfigFile: path.resolve(__dirname, './client.js')
 })

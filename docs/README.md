@@ -1,3 +1,7 @@
-# Bird的个人知识库
+---
+home: true
+---
 
-欢迎来到我的个人知识库！
+<ClientOnly>
+  <Home />
+</ClientOnly>
