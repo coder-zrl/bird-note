@@ -64,8 +64,8 @@ export default defineUserConfig({
           text: '排序',
           collapsible: false,
           children: [
-            {text: '内部排序', link: '/algorithm/内部排序'},
-            {text: '外部排序', link: '/algorithm/外部排序'},
+            {text: '内部排序', link: '/algorithm/排序/内部排序'},
+            {text: '外部排序', link: '/algorithm/排序/外部排序'},
           ],
         }
       ]
