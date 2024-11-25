@@ -1,7 +1,7 @@
 import {viteBundler} from '@vuepress/bundler-vite'
 import {defaultTheme} from '@vuepress/theme-default'
 import {defineUserConfig} from 'vuepress'
-import { path } from '@vuepress/utils'
+// import { path } from '@vuepress/utils'
 
 export default defineUserConfig({
   bundler: viteBundler(),
@@ -16,8 +16,8 @@ export default defineUserConfig({
     // 导航栏
     navbar: [
       {text: '编码', link: '/encode/'},
-      {text: '指南', link: '/guide/'},
       {text: 'BLOG', link: '/blog/'},
+      {text: '数据结构与算法', link: '/algorithm/'},
       {
         text: '关于',
         children: [
@@ -49,7 +49,6 @@ export default defineUserConfig({
           link: '/encode/Base64编码原理与应用'
         }
       ],
-      '/guide': 'auto',
       '/blog': [
         {
           text: 'Java基础',
@@ -59,6 +58,16 @@ export default defineUserConfig({
             {text: 'Stream流式处理', link: '/blog/Stream流式处理'},
           ],
         }
+      ],
+      '/algorithm': [
+        {
+          text: '排序',
+          collapsible: false,
+          children: [
+            {text: '内部排序', link: '/algorithm/内部排序'},
+            {text: '外部排序', link: '/algorithm/外部排序'},
+          ],
+        }
       ]
     }
   }),
@@ -66,5 +75,6 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Bird的个人知识库',
   description: 'Just playing around',
-  clientConfigFile: path.resolve(__dirname, './client.js')
+  // 设置主页为vue文件时使用，暂时禁用
+  // clientConfigFile: path.resolve(__dirname, './client.js')
 })
